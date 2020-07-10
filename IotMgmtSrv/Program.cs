@@ -12,6 +12,10 @@ using Microsoft.Extensions.Logging;
 // Rzor Pages
 // https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/crud?view=aspnetcore-3.1
 
+
+// API + security sample
+//https://stackoverflow.com/questions/61165402/asp-net-core-3-1-with-razor-pages-api-controllers-and-identityserver4
+
 namespace IotMgmtSrv
 {
     public class Program

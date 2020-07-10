@@ -63,7 +63,11 @@ namespace IotMgmtSrv
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                endpoints.MapControllers();
             });
+
+            //app.UseOpenApi();
+            //app.UseSwaggerUi3();
         }
     }
 }
