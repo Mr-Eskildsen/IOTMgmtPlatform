@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using IotMgmtSrv.Data;
+using IotMgmtSrv.Controllers.Sidebar;
+using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace IotMgmtSrv
 {
@@ -30,8 +32,9 @@ namespace IotMgmtSrv
             services.AddControllers();
             services.AddOpenApiDocument();
 
+            //services.AddSingleton(typeof(SideBarModel), new SideBarModel { });
+            services.AddSingleton<SidebarController>();
 
-            
             services.AddDbContext<IotMgmtSrvContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("IotMgmtSrvContext")));
         }
