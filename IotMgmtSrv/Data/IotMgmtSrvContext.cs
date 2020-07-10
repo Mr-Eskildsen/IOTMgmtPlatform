@@ -14,8 +14,8 @@ namespace IotMgmtSrv.Data
         {
         }
 
-        public DbSet<IotMgmtSrv.Models.Device> Device { get; set; }
-
         public DbSet<IotMgmtSrv.Models.Asset> Asset { get; set; }
+
+        public DbSet<IotMgmtSrv.Models.Device> Device { get; set; }
     }
 }

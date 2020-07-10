@@ -27,7 +27,11 @@ namespace IotMgmtSrv
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddControllers();
+            services.AddOpenApiDocument();
 
+
+            
             services.AddDbContext<IotMgmtSrvContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("IotMgmtSrvContext")));
         }
@@ -65,9 +69,9 @@ namespace IotMgmtSrv
                 endpoints.MapRazorPages();
                 endpoints.MapControllers();
             });
-
-            //app.UseOpenApi();
-            //app.UseSwaggerUi3();
+            //binaryintellect.net/articles/e6557104-d06a-418c-a1a9-b8ce248f60b1.aspx
+            app.UseOpenApi();
+            app.UseSwaggerUi3();
         }
     }
 }
