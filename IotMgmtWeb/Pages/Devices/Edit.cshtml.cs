@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IotMgmtWeb.Data;
 using IotMgmtWeb.Models;
+using IotMgmtWeb.Data.Entities;
 
 namespace IotMgmtWeb.Pages.Devices
 {

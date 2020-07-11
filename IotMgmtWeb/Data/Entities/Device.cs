@@ -1,9 +1,10 @@
-﻿using System;
+﻿using IotMgmtWeb.Data.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace IotMgmtWeb.Models
+namespace IotMgmtWeb.Data.Entities
 {
     public class Device
     {

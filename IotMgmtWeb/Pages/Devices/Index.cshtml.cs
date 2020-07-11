@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using IotMgmtWeb.Data;
-using IotMgmtWeb.Models;
+using IotMgmtWeb.Data.Entities;
+
 
 namespace IotMgmtWeb.Pages.Devices
 {

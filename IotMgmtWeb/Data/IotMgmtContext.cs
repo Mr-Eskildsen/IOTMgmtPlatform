@@ -1,19 +1,35 @@
 ﻿using Microsoft.EntityFrameworkCore;
+//using System.Data.Entity;
+
 using IotMgmtWeb.Models;
+using IotMgmtWeb.Data.Entities;
 
 namespace IotMgmtWeb.Data
 {
-    public class IotMgmtContext : DbContext
+
+    public interface IIotMgmtContext
+    {
+
+        public DbSet<Asset> Asset { get; set; }
+        public DbSet<Device> Device { get; set; }
+        public DbSet<DeviceRequest> DeviceRequest { get; set; }
+        public DbSet<Package> Package { get; set; }
+
+    }
+
+    public class IotMgmtContext : DbContext, IIotMgmtContext
     {
         public IotMgmtContext (DbContextOptions<IotMgmtContext> options)
             : base(options)
         {
         }
 
-        public DbSet<IotMgmtWeb.Models.Asset> Asset { get; set; }
+        public DbSet<Asset> Asset { get; set; }
 
-        public DbSet<IotMgmtWeb.Models.Device> Device { get; set; }
+        public DbSet<Device> Device { get; set; }
+        public DbSet<DeviceRequest> DeviceRequest { get; set; }
 
+        public DbSet<Package> Package { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -28,9 +44,6 @@ namespace IotMgmtWeb.Data
                 relationship.HasOne(r => r._Package).WithMany(u => u.Assets);
             });
         }
-
-
-        public DbSet<IotMgmtWeb.Models.Package> Package { get; set; }
 
 
     }

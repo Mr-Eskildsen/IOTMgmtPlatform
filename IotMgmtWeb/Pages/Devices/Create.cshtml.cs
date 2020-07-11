@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using IotMgmtWeb.Data;
 using IotMgmtWeb.Models;
+using IotMgmtWeb.Data.Entities;
 
 namespace IotMgmtWeb.Pages.Devices
 {
