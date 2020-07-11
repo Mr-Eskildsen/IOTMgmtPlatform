@@ -5,12 +5,14 @@ using System.Threading.Tasks;
 
 namespace IotMgmtSrv.Models
 {
-    public class Asset
+    public class Package
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
+        
         public string Name { get; set; }
+
         public string Version { get; set; }
 
-        public ICollection<Package2Asset> Packages { get; set; }
+        public ICollection<Package2Asset> Assets { get; set; }
     }
 }
