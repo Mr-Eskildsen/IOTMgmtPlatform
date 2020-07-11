@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IOTManagementWeb", "IotMgmtWeb\IotMgmtWeb.csproj", "{E4DF1CE5-2F0B-44D0-8DE1-FC20E8EB3E3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IotMgmtWeb", "IotMgmtWeb\IotMgmtWeb.csproj", "{E4DF1CE5-2F0B-44D0-8DE1-FC20E8EB3E3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IotMgmtWeb.Tests", "IotMgmtWeb.Tests\IotMgmtWeb.Tests.csproj", "{ABFEF845-2AC0-49B0-BECD-F6D57FEB082D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{E4DF1CE5-2F0B-44D0-8DE1-FC20E8EB3E3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4DF1CE5-2F0B-44D0-8DE1-FC20E8EB3E3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4DF1CE5-2F0B-44D0-8DE1-FC20E8EB3E3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABFEF845-2AC0-49B0-BECD-F6D57FEB082D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABFEF845-2AC0-49B0-BECD-F6D57FEB082D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABFEF845-2AC0-49B0-BECD-F6D57FEB082D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABFEF845-2AC0-49B0-BECD-F6D57FEB082D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
